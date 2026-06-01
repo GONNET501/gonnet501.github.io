@@ -1,98 +1,112 @@
 <!DOCTYPE html>
-
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>GON.NET - Servicio Técnico</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background-color: #f4f4f4;
-      color: #333;
+      text-align: center;
     }
+
     header {
-      background-color: #0a3d62;
+      background-color: #1f2937;
       color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 30px;
     }
-    section {
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
       padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    }
+
+    .card {
       background: white;
-      margin-top: 10px;
-      border-radius: 8px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #0a3d62;
-    }
-    ul {
-      line-height: 1.8;
-    }
-    .whatsapp {
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .whatsapp a {
-      background-color: #25D366;
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2563eb;
       color: white;
-      padding: 15px;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 18px;
-      display: inline-block;
+      margin-top: 10px;
     }
+
+    .btn:hover {
+      background-color: #1e40af;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
     footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
+      background: #1f2937;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>GON.NET</h1>
-  <p>Servicio Técnico Profesional</p>
-</header>
+  <header>
+    <h1>GON.NET</h1>
+    <p>Servicio técnico profesional en informática, redes y electricidad</p>
+  </header>
 
-<section>
-  <h2>Servicios</h2>
-  <ul>
-    <li>Reparación y mantenimiento de PC</li>
-    <li>Instalación y configuración de redes</li>
-    <li>Sistemas de cámaras (CCTV)</li>
-    <li>Electricidad domiciliaria</li>
-    <li>Soporte técnico para empresas y particulares</li>
-  </ul>
-</section>
+  <div class="container">
 
-<section>
-  <h2>Zona de trabajo</h2>
-  <p>La Plata, Gonnet y alrededores</p>
-</section>
+    <div class="card">
+      <h2>💻 Servicios</h2>
+      <p>Soluciones técnicas para hogares, comercios y empresas</p>
 
-<section>
-  <h2>Contacto</h2>
-  <p><strong>Tel:</strong> 2216998381</p>
-  <p><strong>Email:</strong> sergiorbarragán@gmail.com</p>
+      <ul style="text-align:left;">
+        <li>Reparación de PC y notebooks</li>
+        <li>Redes y CCTV</li>
+        <li>Electricidad domiciliaria</li>
+      </ul>
+    </div>
 
-  <div class="whatsapp">
-    <a href="https://wa.me/542216998381" target="_blank">
-      Contactar por WhatsApp
-    </a>
+    <div class="card">
+      <h2>🛠️ Trabajo Profesional</h2>
+      <p>Más de 30 años de experiencia en soluciones técnicas.</p>
+
+      <img src="https://via.placeholder.com/500x300" alt="Servicio técnico">
+    </div>
+
+    <div class="card">
+      <h2>📞 Contacto</h2>
+      <p>Respondemos rápido</p>
+
+      <p><strong>Tel:</strong> 2216998381</p>
+      <p><strong>Email:</strong> sergiorbarragán@gmail.com</p>
+
+      <a class="btn" href="https://wa.me/5492216998381" target="_blank">
+        Contactar por WhatsApp
+      </a>
+    </div>
+
   </div>
-</section>
 
-<footer>
-  <p>GON.NET - Servicio Técnico</p>
-</footer>
+  <footer>
+    <p>GON.NET - La Plata</p>
+  </footer>
 
 </body>
 </html>

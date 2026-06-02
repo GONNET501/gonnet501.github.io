@@ -1,117 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GON.NET - Servicio Técnico</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    header img {
-      max-width: 300px;
-      display: block;
-      margin: auto;
-    }
-
-    header p {
-      font-size: 20px; /* más grande */
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    .servicio {
-      margin-bottom: 25px;
-    }
-
-    .servicio img {
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    .boton {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GON.NET - Servicio Técnico</title>
 </head>
 
-<body>
+<body style="margin:0; font-family: Arial, sans-serif; background-color:#f4f4f4;">
 
-<header>
-  <img src="logo.png" alt="GON.NET">
-  <p>Reparación de PC y Recuperación de Datos</p>
+```
+<!-- HEADER -->
+<header style="background-color: black; text-align: center; padding: 25px 10px 15px 10px;">
+    
+    <img src="logo.png" alt="GON.NET" 
+    style="width: 240px; max-width: 90%; display: block; margin: 0 auto;">
+
+    <div style="
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 12px;
+    ">
+        Reparación de PC y Recuperación de Datos
+    </div>
+
 </header>
 
-<section>
-  <h2>Servicios</h2>
+<!-- CONTENIDO -->
+<div style="padding: 20px; text-align: center;">
 
-  <div class="servicio">
-    <img src="pc.jpg" alt="Reparación de PC">
-    <p>Reparación de PC y notebooks</p>
-  </div>
+    <p style="font-size:18px;">
+        Soluciones rápidas para equipos lentos, fallas y pérdida de información
+    </p>
 
-  <div class="servicio">
-    <img src="data.jpg" alt="Recuperación de datos">
-    <p>Recuperación de datos</p>
-  </div>
+    <p style="font-size:18px; font-weight:bold;">
+        Zona: Manuel B. Gonnet, La Plata y alrededores
+    </p>
 
-  <div class="servicio">
-    <img src="wifi.jpg" alt="Redes y conectividad">
-    <p>Redes, WiFi y conectividad</p>
-  </div>
+    <p>
+        <a href="https://wa.me/542216998381" 
+        style="background-color: green; color: white; padding: 12px 20px; text-decoration: none; font-size:18px; border-radius:5px;">
+            Consultar por WhatsApp
+        </a>
+    </p>
 
-</section>
+    <!-- SERVICIOS -->
+    <h2>Servicios principales</h2>
 
-<section>
-  <h2>Contacto</h2>
-  <p>Email: gestiongon.net@gmail.com</p>
-  <p>Atención en Gonnet (La Plata) y zonas cercanas</p>
+    <div>
+        <img src="pc.jpg" style="width:90%; max-width:400px;">
+        <p style="font-size:18px;">💻 Reparación de PC</p>
+    </div>
 
-  <a class="boton" href="https://wa.me/542216998381" target="_blank">
-    Contactar por WhatsApp
-  </a>
-</section>
+    <div>
+        <img src="wifi.jpg" style="width:90%; max-width:400px;">
+        <p style="font-size:18px;">📡 Redes y WiFi</p>
+    </div>
 
-<footer>
-  <p>© GON.NET - Servicio técnico</p>
-</footer>
+    <div>
+        <img src="data.jpg" style="width:90%; max-width:400px;">
+        <p style="font-size:18px;">💾 Recuperación de Datos</p>
+    </div>
+
+</div>
+```
 
 </body>
 </html>

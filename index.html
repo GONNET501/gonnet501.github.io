@@ -1,122 +1,147 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GON.NET - Servicio Técnico</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GON.NET - Servicio Técnico</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
+}
+
+/* HEADER BLANCO */
+.header {
+    background: #ffffff;
+    text-align: center;
+    padding: 30px 15px 20px 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* LOGO */
+.logo img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+
+/* SUBTÍTULO */
+.subtitulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #111;
+}
+
+/* ZONA */
+.zona {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 15px;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+/* SECCIÓN NEGRA (contenido) */
+.contenido {
+    padding: 30px 15px;
+    text-align: center;
+    color: white;
+}
+
+/* GRID DE FLYERS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TARJETAS */
+.card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+</style>
 </head>
 
-<body style="margin:0; font-family: Arial, sans-serif; background-color:#f4f4f4;">
+<body>
 
 <!-- HEADER -->
-
-<header style="background-color: black; padding: 90px 10px 80px 10px; text-align:center;">
-
-```
-<div style="max-width:900px; margin:auto;">
-
-    <!-- BLOQUE BLANCO AJUSTADO -->
-    <div style="
-        background: white;
-        padding: 25px 0;
-        display: inline-block;
-    ">
-        <img src="logo.png" alt="GON.NET" 
-        style="width: 380px; max-width: 95%; display:block;">
+<div class="header">
+    
+    <div class="logo">
+        <!-- REEMPLAZÁ POR TU LOGO -->
+        <img src="logo.png" alt="N.M Servicio Técnico">
     </div>
 
-    <!-- TITULO -->
-    <div style="
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-        margin-top: 25px;
-    ">
+    <div class="subtitulo">
         Servicio Técnico Integral
     </div>
 
-    <div style="
-        color: #9ca3af;
-        font-size: 20px;
-        margin-top: 10px;
-    ">
-        PC • Celulares • Redes • Datos
+    <div class="zona">
+        Manuel B. Gonnet, La Plata y alrededores
     </div>
 
-</div>
-```
+    <a class="btn-whatsapp" href="https://wa.me/542216998381" target="_blank">
+        Consultar por WhatsApp
+    </a>
 
-</header>
+</div>
 
 <!-- CONTENIDO -->
+<div class="contenido">
 
-<div style="padding: 25px; text-align: center;">
+    <div class="grid">
 
-```
-<div style="max-width:900px; margin:auto;">
+        <!-- FLYER 1 -->
+        <div class="card">
+            <img src="flyer1.jpg" alt="Servicio Técnico PC">
+        </div>
 
-    <p style="font-size:18px;">
-        Soluciones para equipos lentos, fallas y pérdida de información
-    </p>
+        <!-- FLYER 2 -->
+        <div class="card">
+            <img src="flyer2.jpg" alt="Recuperación de datos">
+        </div>
 
-    <p style="font-size:18px; font-weight:bold;">
-        Zona: Manuel B. Gonnet, La Plata y alrededores
-    </p>
+        <!-- FLYER 3 -->
+        <div class="card">
+            <img src="flyer3.jpg" alt="Cambio de teléfono">
+        </div>
 
-    <p>
-        <a href="https://wa.me/542216998381" 
-        style="background-color: green; color: white; padding: 14px 26px; text-decoration: none; font-size:18px; border-radius:5px;">
-            Consultar por WhatsApp
-        </a>
-    </p>
+        <!-- FLYER 4 -->
+        <div class="card">
+            <img src="flyer4.jpg" alt="Redes WiFi">
+        </div>
 
-</div>
-```
-
-</div>
-
-<!-- FLYERS -->
-
-<section style="padding: 50px 20px; background-color: #ffffff;">
-
-```
-<h2 style="text-align:center; margin-bottom: 40px;">
-    Servicios
-</h2>
-
-<div style="
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 900px;
-    margin: auto;
-">
-
-    <!-- PC -->
-    <div style="height:350px; display:flex; align-items:center; justify-content:center;">
-        <img src="pc.jpg" style="max-width:100%; max-height:100%; border-radius:10px;">
-    </div>
-
-    <!-- DATOS -->
-    <div style="height:350px; display:flex; align-items:center; justify-content:center;">
-        <img src="data.jpg" style="max-width:100%; max-height:100%; border-radius:10px;">
-    </div>
-
-    <!-- CELULARES -->
-    <div style="height:350px; display:flex; align-items:center; justify-content:center;">
-        <img src="celulares.jpg" style="max-width:100%; max-height:100%; border-radius:10px;">
-    </div>
-
-    <!-- RED -->
-    <div style="height:350px; display:flex; align-items:center; justify-content:center;">
-        <img src="wifi.jpg" style="max-width:100%; max-height:100%; border-radius:10px;">
     </div>
 
 </div>
-```
-
-</section>
 
 </body>
 </html>

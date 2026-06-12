@@ -1,114 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico - GON.NET</title>
+<!-- ===== SECCIÓN FLYERS GON.NET ===== -->
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
+.flyers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* HEADER AGRANDADO */
-.header {
-    background: #ffffff;
-    text-align: center;
-    padding: 50px 20px 40px 20px;
+.flyer {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
 }
 
-.logo img {
-    max-width: 420px;
-    width: 100%;
+/* efecto suave (opcional, pero queda profesional) */
+.flyer:hover {
+  transform: scale(1.02);
 }
 
-.titulo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #111;
-    margin-top: 15px;
-}
-
-.zona {
-    color: #555;
-    font-size: 16px;
-}
-
-/* BOTÓN */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    background: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* CONTENIDO */
-.contenido {
-    padding: 15px;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-/* TARJETAS */
-.card img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
+/* evita que sean gigantes en pantallas grandes */
+@media (min-width: 1024px) {
+  .flyer {
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 </style>
 
-</head>
-<body>
 
-<!-- HEADER -->
-<div class="header">
-    <div class="logo">
-        <img src="logo.png" alt="Servicio Técnico">
-    </div>
+<div class="flyers-container">
 
-    <div class="titulo">Servicio Técnico Integral</div>
-    <div class="zona">La Plata y alrededores</div>
+  <!-- PC -->
+  <img src="img/flyer-pc.jpg" alt="Servicio técnico de PC" class="flyer">
 
-    <a class="btn" href="https://wa.me/542216998381" target="_blank">
-        Consultar por WhatsApp
-    </a>
-</div>
+  <!-- DATOS -->
+  <img src="img/flyer-datos.jpg" alt="Recuperación de datos" class="flyer">
 
-<!-- CONTENIDO -->
-<div class="contenido">
+  <!-- CELULARES -->
+  <img src="img/flyer-celulares.jpg" alt="Configuración de celulares" class="flyer">
 
-    <div class="grid">
-
-        <div class="card">
-            <img src="pc.jpg" alt="PC">
-        </div>
-
-        <div class="card">
-            <img src="DATOS.png" alt="Recuperación de datos">
-        </div>
-
-        <div class="card">
-            <img src="WhatsApp Image 2026-06-06 at 18.28.39(1).jpeg" alt="Servicio técnico celulares">
-        </div>
-
-        <div class="card">
-            <img src="wifi.jpg" alt="WiFi">
-        </div>
-
-    </div>
+  <!-- REDES / WIFI -->
+  <img src="img/flyer-wifi.jpg" alt="Mejora de redes WiFi" class="flyer">
 
 </div>
-
-</body>
-</html>

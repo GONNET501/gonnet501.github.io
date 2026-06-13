@@ -1,49 +1,78 @@
-<!-- ===== SECCIÓN FLYERS GON.NET ===== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>GON.NET - Servicio Técnico</title>
 
 <style>
-.flyers-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  padding: 30px 10px;
+}
+
+.header h1 {
+  color: #5cff00;
+  margin: 0;
+}
+
+.sub {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.flyers {
   padding: 20px;
 }
 
-.flyer {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.2s ease;
-}
-
-/* efecto suave (opcional, pero queda profesional) */
-.flyer:hover {
-  transform: scale(1.02);
-}
-
-/* evita que sean gigantes en pantallas grandes */
-@media (min-width: 1024px) {
-  .flyer {
-    max-height: 500px;
-    object-fit: cover;
-  }
+.flyers img {
+  width: 90%;
+  max-width: 500px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
 }
 </style>
 
+</head>
 
-<div class="flyers-container">
+<body>
 
-  <!-- PC -->
-  <img src="img/flyer-pc.jpg" alt="Servicio técnico de PC" class="flyer">
+<div class="header">
+  <h1>GON.NET</h1>
+  <div class="sub">Servicio Técnico Integral</div>
+  <div class="sub">PC • Celulares • Redes • Datos</div>
 
-  <!-- DATOS -->
-  <img src="img/flyer-datos.jpg" alt="Recuperación de datos" class="flyer">
+  <a class="whatsapp" href="https://wa.me/542216998381">
+    Consultar por WhatsApp
+  </a>
+</div>
 
-  <!-- CELULARES -->
-  <img src="img/flyer-celulares.jpg" alt="Configuración de celulares" class="flyer">
+<div class="flyers">
 
-  <!-- REDES / WIFI -->
-  <img src="img/flyer-wifi.jpg" alt="Mejora de redes WiFi" class="flyer">
+  <!-- ACA VAN TUS IMAGENES -->
+  <img src="pc.jpg">
+  <img src="datos.jpg">
+  <img src="celulares.jpg">
+  <img src="wifi.jpg">
 
 </div>
+
+</body>
+</html>
